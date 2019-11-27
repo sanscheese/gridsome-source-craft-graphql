@@ -1,0 +1,33 @@
+{
+  "version": "0.0.1",
+  "name": "@bhws/source-craft-graphql",
+  "description": "Craft CMS (GraphQL) source for Gridsome",
+  "homepage": "https://github.com/sanscheese/gridsome-source-craft-graphql/",
+  "author": "Ben Sheedy <web@bensheedy.com> (http://bensheedy.com/)",
+  "repository": "https://github.com/sanscheese/gridsome-source-craft-graphql/",
+  "main": "index.js",
+  "scripts": {
+    "release": "standard-version && git push --follow-tags && npm publish"
+  },
+  "license": "MIT",
+  "keywords": [
+    "gridsome",
+    "gridsome-plugin",
+    "source",
+    "craft",
+    "craft-cms"
+  ],
+  "dependencies": {
+    "fs-extra": "^7.0.0",
+    "@gridsome/source-graphql": "^0.1.0"
+  },
+  "devDependencies": {
+    "standard-version": "^7.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.3"
+  }
+}
