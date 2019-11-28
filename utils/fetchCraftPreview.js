@@ -3,6 +3,8 @@ import { setCraftPreview, cache } from './shared'
 import axios from 'axios'
 
 export default async ({ $route, $context, $page }, endpoint) => {
+  if (!$context.craftQueryVariables) return
+
   if (cache.code && cache.token ||
       ($route.query['x-craft-live-preview'] || $route.query['x-craft-preview']) &&
       $route.query.token) {
@@ -10,7 +12,7 @@ export default async ({ $route, $context, $page }, endpoint) => {
     const code = $route.query[codeKey]
     const token = cache.token || $route.query.token
     const craftQuery = $context.craftQuery
-    const craftQueryVariables = JSON.stringify($context.craftQueryVariables)
+    const craftQueryVariables = $context.craftQueryVariables
 
     setCraftPreview({
       codeKey: codeKey,
@@ -18,8 +20,14 @@ export default async ({ $route, $context, $page }, endpoint) => {
       token: token
     })
 
+    // Override for non-existent pages
+    craftQueryVariables.id = $route.query['CraftPreviewId'] || craftQueryVariables.id
+
     // @TODO - Sort out the best handling for the domain
-    const res = await axios.get(`${endpoint}?query=${craftQuery}&token=${token}&${codeKey}=${code}&variables=${craftQueryVariables}`)
+    const res = await axios.post(`${endpoint}?token=${token}&${codeKey}=${code}`, {
+      query: craftQuery,
+      variables: craftQueryVariables
+    })
 
     document.body.classList.remove('craft-preview')
 

@@ -19,6 +19,7 @@
   ],
   "dependencies": {
     "fs-extra": "^7.0.0",
+    "replace": "^1.1.1",
     "@gridsome/source-graphql": "^0.1.0"
   },
   "devDependencies": {

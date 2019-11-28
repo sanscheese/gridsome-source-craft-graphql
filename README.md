@@ -13,6 +13,8 @@ Or, NPM: `npm install  @bhws/gridsome-source-craft-graphql`
 
 ### Usage
 
+Add `[CraftPreviewId].vue` to your projects `.gitignore` file. These files are for live preview and should be added to your repo.
+
 #### Source plugin
 
 ```js
@@ -64,7 +66,7 @@ Add the `CraftLivePreview` component to you build.
 </template>
 
 <script>
-import CraftLivePreview from '@bhws/gridsome-source-craft-graphql/components/CraftLivePreview'
+import CraftLivePreview from '@bhws/gridsome-source-craft-graphql/CraftLivePreview'
 
 export default {
   components: {
@@ -81,3 +83,5 @@ export default {
 1. Setup the [GraphQL API on Craft](https://docs.craftcms.com/v3/graphql.html#getting-started)
 
 2. Setup the [preview targets](https://docs.craftcms.com/v3/sections-and-entries.html#sections)
+
+3. Ensure your preview targets also have `?CraftPreviewId={id}` at the end.
