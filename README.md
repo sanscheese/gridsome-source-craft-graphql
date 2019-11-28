@@ -58,20 +58,22 @@ module.exports = {
 
 Add the `CraftLivePreview` component to you build.
 
-[Override `App.vue`](https://gridsome.org/docs/overriding-app/)
+Override `App.vue` - [See Gridsome docs](https://gridsome.org/docs/overriding-app/)
 
 ```html
 <template>
+  <!-- ... -->
   <CraftLivePreview endpoint="https://example.com/api" />
+  <!-- ... -->
 </template>
 
 <script>
-import CraftLivePreview from '@bhws/gridsome-source-craft-graphql/CraftLivePreview'
-
 export default {
+  //...
   components: {
-    CraftLivePreview
+    CraftLivePreview: () => imoprt ('@bhws/gridsome-source-craft-graphql/CraftLivePreview')
   }
+  //...
 }
 </script>
 ```
