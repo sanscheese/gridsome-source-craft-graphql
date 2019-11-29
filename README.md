@@ -50,7 +50,7 @@ module.exports = {
   An object of headers to be passed along with your request to the API endpoint. This will generally be used to authenticate your request.
 
 - **livePreview** - *Boolean*
-  *Default: true*
+  *Default: false*
   Allows switching disabling live preview and query being added on frontend (useful for an environment variable to disable it on production)
 
 
