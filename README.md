@@ -13,7 +13,7 @@ Or, NPM: `npm install  @bhws/gridsome-source-craft-graphql`
 
 ### Usage
 
-Add `[CraftPreviewId].vue` to your projects `.gitignore` file. These files are for live preview and should be added to your repo.
+Add `[CraftPreviewId].vue` to your projects `.gitignore` file. These files are for live preview and shouldn't be added to your git repo.
 
 #### Source plugin
 
