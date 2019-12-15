@@ -2,7 +2,9 @@
 
 > This package is under development. The API might change before v1 is released.
 
-A detailed write up
+> It requires Gridsome on at least v0.7.12
+
+A more detailed write up is on [my site](https://bensheedy.com/blog/live-preview-with-craft-cms-and-gridsome)
 
 ## Gridsome
 
