@@ -13,7 +13,7 @@ Or, NPM: `npm install  @bhws/gridsome-source-craft-graphql`
 
 ### Usage
 
-Add `[CraftPreviewId].vue` to your projects `.gitignore` file. These files are for live preview and should be added to your repo.
+Add `[CraftPreviewId].vue` to your projects `.gitignore` file. These files are for live preview and shouldn't be added to your git repo.
 
 #### Source plugin
 
@@ -50,7 +50,7 @@ module.exports = {
   An object of headers to be passed along with your request to the API endpoint. This will generally be used to authenticate your request.
 
 - **livePreview** - *Boolean*
-  *Default: true*
+  *Default: false*
   Allows switching disabling live preview and query being added on frontend (useful for an environment variable to disable it on production)
 
 
