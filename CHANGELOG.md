@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/sanscheese/gridsome-source-craft-graphql/compare/v0.0.2...v0.0.3) (2019-12-15)
+
+
+### Bug Fixes
+
+* docs ([ac749b3](https://github.com/sanscheese/gridsome-source-craft-graphql/commit/ac749b3129e0d18521910524080814bb37fd4f74))
+* **docs:** improve getting started a bit more ([1b8190a](https://github.com/sanscheese/gridsome-source-craft-graphql/commit/1b8190acc06080e8907784eca8b7f13c15a0b4a0))
+* **docs:** livePreview option is false by default ([0502786](https://github.com/sanscheese/gridsome-source-craft-graphql/commit/050278681f9c8231de8c71781968ae9a4ef867de))
+
 ### 0.0.2 (2019-11-28)
 
 
