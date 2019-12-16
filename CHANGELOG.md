@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/sanscheese/gridsome-source-craft-graphql/compare/v0.0.6...v0.0.7) (2019-12-16)
+
+
+### Bug Fixes
+
+* dataPath ([912b5e9](https://github.com/sanscheese/gridsome-source-craft-graphql/commit/912b5e95a01528e5014ef5ce82a1354fdad88a46))
+
 ### [0.0.6](https://github.com/sanscheese/gridsome-source-craft-graphql/compare/v0.0.5...v0.0.6) (2019-12-16)
 
 
