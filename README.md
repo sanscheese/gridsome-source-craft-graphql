@@ -86,6 +86,6 @@ export default {
 
 1. Setup the [GraphQL API on Craft](https://docs.craftcms.com/v3/graphql.html#getting-started)
 
-2. Setup the [preview targets](https://docs.craftcms.com/v3/sections-and-entries.html#sections)
+2. Setup the [preview targets](https://docs.craftcms.com/v3/sections-and-entries.html#preview-targets)
 
 3. Ensure your preview targets also have `?CraftPreviewSlug={slug}` at the end.
