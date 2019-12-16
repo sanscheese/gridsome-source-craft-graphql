@@ -15,7 +15,7 @@ Or, NPM: `npm install  @bhws/gridsome-source-craft-graphql`
 
 ### Usage
 
-Add `[CraftPreviewId].vue` to your projects `.gitignore` file. These files are for live preview and shouldn't be added to your git repo.
+Add `[CraftPreviewSlug].vue` to your projects `.gitignore` file. These files are for live preview and shouldn't be added to your git repo.
 
 #### Source plugin
 
@@ -73,7 +73,7 @@ Override `App.vue` - [See Gridsome docs](https://gridsome.org/docs/overriding-ap
 export default {
   //...
   components: {
-    CraftLivePreview: () => imoprt ('@bhws/gridsome-source-craft-graphql/CraftLivePreview')
+    CraftLivePreview: () => import ('@bhws/gridsome-source-craft-graphql/CraftLivePreview')
   }
   //...
 }
@@ -88,4 +88,4 @@ export default {
 
 2. Setup the [preview targets](https://docs.craftcms.com/v3/sections-and-entries.html#sections)
 
-3. Ensure your preview targets also have `?CraftPreviewId={id}` at the end.
+3. Ensure your preview targets also have `?CraftPreviewSlug={slug}` at the end.
