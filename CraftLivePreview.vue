@@ -3,7 +3,7 @@ import fetchCraftPreview from './utils/fetchCraftPreview'
 
 export default {
   props: {
-    url: {
+    endpoint: {
       type: String,
       default: null
     }
@@ -15,14 +15,14 @@ export default {
     const dataPath = this.$route.meta.dataPath
     if (dataPath && dataPath.endsWith('craft_preview_id.json')) {
         const newPath = dataPath.replace(".json", "")
-        if (!!this.url) this.$router.push({ path: newPath, query: this.$route.query })
+        if (!!this.endpoint) this.$router.push({ path: newPath, query: this.$route.query })
       }
 
-    if (!!this.url) fetchCraftPreview(this, this.url)
+    if (!!this.endpoint) fetchCraftPreview(this, this.endpoint)
   },
   watch: {
     '$route.path': function () { 
-      if (!!this.url) fetchCraftPreview(this, this.url) 
+      if (!!this.endpoint) fetchCraftPreview(this, this.endpoint) 
     },
   },
 }
