@@ -22,7 +22,11 @@ export default async ({ $route, $context, $page }, endpoint) => {
     })
 
     // Override for non-existent pages
-    craftQueryVariables.id =  ($route.meta.dataPath && $route.meta.dataPath.endsWith('craft_preview_id.json') && $route.query['CraftPreviewId']) ? $route.query['CraftPreviewId'] : craftQueryVariables.id
+    if ($route.meta.dataPath && $route.meta.dataPath.endsWith('craft_preview_slug.json')) {
+      craftQueryVariables.slug = $route.query['CraftPreviewSlug']
+
+      craftQuery = craftQuery.replace(/(\r\n|\n|\r)/gm, '')
+    }
 
     // @TODO - Sort out the best handling for the domain
     const res = await axios.post(`${endpoint}?token=${token}&${codeKey}=${code}`, {

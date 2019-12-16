@@ -13,7 +13,7 @@ export default {
   },
   mounted () {
     const dataPath = this.$route.meta.dataPath
-    if (dataPath && dataPath.endsWith('craft_preview_id.json')) {
+    if (dataPath && dataPath.endsWith('craft_preview_slug.json')) {
         const newPath = dataPath.replace(".json", "")
         if (!!this.endpoint) this.$router.push({ path: newPath, query: this.$route.query })
       }
