@@ -2,11 +2,11 @@
 
 > This package is under development. The API might change before v1 is released.
 
-> It requires Gridsome on at least v0.7.12
+> Requires Gridsome v0.7.12 or later
 
 A more detailed write up is on [my site](https://bensheedy.com/blog/live-preview-with-craft-cms-and-gridsome)
 
-## Gridsome
+## Gridsome setup
 
 ### Install
 
@@ -15,7 +15,7 @@ Or, NPM: `npm install  @bhws/gridsome-source-craft-graphql`
 
 ### Usage
 
-Add `[CraftPreviewSlug].vue` to your projects `.gitignore` file. These files are for live preview and shouldn't be added to your git repo.
+Add `\[CraftPreviewSlug\].vue` to your projects `.gitignore` file. These files are for live preview and shouldn't be added to your git repo.
 
 #### Source plugin
 
@@ -37,22 +37,22 @@ module.exports = {
 
 ##### Options
 
-- **url** - *String* required
+- **url** - *String* required  
   The URL of a GraphQL API endpoint to request your schema from.
 
-- **fieldName** - *String*
-  *Default: 'craft'*
+- **fieldName** - *String*  
+  *Default: 'craft'*  
   The URL of a GraphQL API endpoint to request your schema from.
 
-- **typeName** - *String*
-  *Default: 'craft'*
+- **typeName** - *String*  
+  *Default: 'craft'*  
   The prefix to be used for your imported schema's field types.
 
-- **headers** - *Object*
+- **headers** - *Object*  
   An object of headers to be passed along with your request to the API endpoint. This will generally be used to authenticate your request.
 
-- **livePreview** - *Boolean*
-  *Default: false*
+- **livePreview** - *Boolean*  
+  *Default: false*  
   Allows switching disabling live preview and query being added on frontend (useful for an environment variable to disable it on production)
 
 
