@@ -1,6 +1,6 @@
 # Craft CMS (GraphQL) source for Gridsome
 
-> This package is under development. The API might change before v1 is released.
+> This package is under development. The API will likely change before v1 is released.
 
 > Requires Gridsome v0.7.12 or later
 
@@ -79,8 +79,6 @@ export default {
 }
 </script>
 ```
-
-
 
 ## Craft CMS setup
 
