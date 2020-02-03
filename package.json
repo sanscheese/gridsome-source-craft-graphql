@@ -1,5 +1,5 @@
 {
-  "version": "0.0.12",
+  "version": "0.0.13",
   "name": "@bhws/gridsome-source-craft-graphql",
   "description": "Craft CMS (GraphQL) source for Gridsome",
   "homepage": "https://github.com/sanscheese/gridsome-source-craft-graphql/",

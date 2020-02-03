@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.13](https://github.com/sanscheese/gridsome-source-craft-graphql/compare/v0.0.12...v0.0.13) (2020-02-03)
+
+
+### Features
+
+* **templates:** Category and Tags ([fdd5cc1](https://github.com/sanscheese/gridsome-source-craft-graphql/commit/fdd5cc1a325f16a2f1af80822c04523a3d934583))
+
+
+### Bug Fixes
+
+* **docs:** housekeeping ([70f3ecc](https://github.com/sanscheese/gridsome-source-craft-graphql/commit/70f3ecc1e6f8b7f2245a3057846d8d46ebba9b37))
+* entry live preview ([28894ad](https://github.com/sanscheese/gridsome-source-craft-graphql/commit/28894add8806074cb832efa6dd69b24c8fb95383))
+
 ### [0.0.12](https://github.com/sanscheese/gridsome-source-craft-graphql/compare/v0.0.11...v0.0.12) (2020-01-12)
 
 
