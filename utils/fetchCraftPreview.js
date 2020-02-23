@@ -14,6 +14,7 @@ export default async ({ $route, $context, $page }, endpoint) => {
     const token = cache.token || $route.query.token
     const craftQuery = $context.craftQuery
     const craftQueryVariables = $context.craftQueryVariables
+    const craftQueryHeaders = $context.craftQueryHeaders || null
 
     setCraftPreview({
       codeKey: codeKey,
@@ -27,10 +28,11 @@ export default async ({ $route, $context, $page }, endpoint) => {
     }
 
     // @TODO - Sort out the best handling for the domain
+    const axiosConfig = craftQueryHeaders ? { headers: { Authorization: craftQueryHeaders.Authorization } } : null
     const res = await axios.post(`${endpoint}?token=${token}&${codeKey}=${code}`, {
       query: craftQuery,
       variables: craftQueryVariables
-    })
+    }, axiosConfig)
 
     document.body.classList.remove('craft-preview')
 

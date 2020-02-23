@@ -13,4 +13,6 @@ module.exports = (api, options) => {
   
   if (options.livePreview) livePreview(api, options)
 
+  // Security Warning
+  if (options.livePreview === 'dangerouslyAllowAuthorizationHeaders') console.log('SECURITY WARNING: "dangerouslyAllowAuthorizationHeaders" is set for the Craft CMS LivePreview.')
 }
