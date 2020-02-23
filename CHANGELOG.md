@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.14](https://github.com/sanscheese/gridsome-source-craft-graphql/compare/v0.0.13...v0.0.14) (2020-02-23)
+
+
+### Bug Fixes
+
+* **live-preview:** authorization headers ([#4](https://github.com/sanscheese/gridsome-source-craft-graphql/issues/4)) ([3138144](https://github.com/sanscheese/gridsome-source-craft-graphql/commit/31381449e57d3c14ee930fdc8a7035434a701793))
+* added uri to context for all created pages ([#3](https://github.com/sanscheese/gridsome-source-craft-graphql/issues/3)) ([9e4a829](https://github.com/sanscheese/gridsome-source-craft-graphql/commit/9e4a829fa935b6b9a48fa76f3f475e548b92f527))
+
 ### [0.0.13](https://github.com/sanscheese/gridsome-source-craft-graphql/compare/v0.0.12...v0.0.13) (2020-02-03)
 
 
