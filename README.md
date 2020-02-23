@@ -51,10 +51,9 @@ module.exports = {
 - **headers** - *Object*  
   An object of headers to be passed along with your request to the API endpoint. This will generally be used to authenticate your request.
 
-- **livePreview** - *Boolean*  
+- **livePreview** - *Boolean* | *String*  
   *Default: false*  
-  Allows switching disabling live preview and query being added on frontend (useful for an environment variable to disable it on production)
-
+  Enable/disable live preview and query being added on frontend (use an environment variable to have this disable this on production). Setting this to `dangerouslyAllowAuthorizationHeaders` will make Authorization headers available to the build. This may likley be a large security concern so **only do this if you know what you are doing.**  
 
 #### Enable Live Preview
 
