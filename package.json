@@ -23,7 +23,7 @@
     "@gridsome/source-graphql": "^0.1.0"
   },
   "devDependencies": {
-    "standard-version": "^7.0.1"
+    "standard-version": "^8.0.1"
   },
   "publishConfig": {
     "access": "public"
