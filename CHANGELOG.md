@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.15](https://github.com/sanscheese/gridsome-source-craft-graphql/compare/v0.0.14...v0.0.15) (2021-02-19)
+
+
+### Features
+
+* shut down ([1e6e27f](https://github.com/sanscheese/gridsome-source-craft-graphql/commit/1e6e27fe98d96e6d78ce12bf7d6dfca453795e64))
+
 ### [0.0.14](https://github.com/sanscheese/gridsome-source-craft-graphql/compare/v0.0.13...v0.0.14) (2020-02-23)
 
 
